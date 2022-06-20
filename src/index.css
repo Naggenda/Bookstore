@@ -53,10 +53,22 @@ select{
 }
 
 .new-book{
-  width: 100%;
-  box-shadow: 0px 0px 10px;
-  margin: 10px 30px;
+  width: 90%;
+  margin: 20px 55px;
+  box-shadow: 0px 0px 2px;
   height: 150px;
+  position: relative;
   
 }
 
+.modify{
+  border: none;
+  background-color: white;
+  color: rgb(44, 44, 247);
+  font-size: 15px;
+  cursor: pointer;
+}
+.modify-btns{
+  position: absolute;
+  bottom: 25px;
+}

@@ -92,8 +92,11 @@ constructor(props) {
 
                    key={index}>{item}
                    <br />
-                   <button  className="btn-add" type="button">Edit</button>
-                   <button type="button"  className="btn-add" onClick={ this.handleRemoveItem }>Delete</button>
+                   <div className="modify-btns">
+                     <button  className="modify" type="button">Comments</button>
+                     <button type="button"  className="modify" onClick={ this.handleRemoveItem }>Remove</button>
+                     <button  className="modify" type="button">Edit</button>
+                   </div>
                 </div>
                    
                
