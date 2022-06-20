@@ -4,17 +4,26 @@ import '../index.css'
 const Books = () => {
     const[myArray, updateMyArray] = useState([]);
     const onClick = () => {
+        
         updateMyArray(arr => [...arr, `${arr.length}`]);
     };
 
+    const removeProduct = (e) => {
+        updateMyArray([
+          ...myArray.slice(0, e),
+          ...myArray.slice(e + 1, myArray.length)
+        ]);
+      }
+
+
 
     // const[new_book] = useState(myArray);
-    const handleDelete = () =>{
-        updateMyArray(myArray.filter(arr => arr!==arr))
-    }
+    // const handleDelete = () =>{
+    //     updateMyArray(myArray.filter(arr => arr!==arr))
+    // }
     
     return (
-        <div className="addbooks">
+    <div className="addbooks">
         <div>
            {
                myArray.map(e => 
@@ -24,7 +33,7 @@ const Books = () => {
                    {e}
                    <br />
                    <button type="button">Edit</button>
-                   <button type="button" onClick={ handleDelete }>Delete</button>
+                   <button type="button" onClick={ removeProduct }>Delete</button>
                 </div>
                    
                
