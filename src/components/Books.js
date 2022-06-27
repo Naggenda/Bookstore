@@ -7,21 +7,7 @@ const Books = () => {
         
         updateMyArray(arr => [...arr, `${arr.length}`]);
     };
-
-    const removeProduct = (e) => {
-        updateMyArray([
-          ...myArray.slice(0, e),
-          ...myArray.slice(e + 1, myArray.length)
-        ]);
-      }
-
-
-
-    // const[new_book] = useState(myArray);
-    // const handleDelete = () =>{
-    //     updateMyArray(myArray.filter(arr => arr!==arr))
-    // }
-    
+  
     return (
     <div className="addbooks">
         <div>
@@ -33,7 +19,7 @@ const Books = () => {
                    {e}
                    <br />
                    <button type="button">Edit</button>
-                   <button type="button" onClick={ removeProduct }>Delete</button>
+                   <button type="button">Delete</button>
                 </div>
                    
                

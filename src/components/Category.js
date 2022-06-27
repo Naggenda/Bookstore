@@ -1,75 +1,29 @@
  import React, { Component } from 'react';
  import '../index.css';
 
-
-// class Addbook extends React.Component{
-
-//     state = {
-//         nameOfNewBook: '',
-//         books: []
-//     }
-
-//     render(){
-//         return(
-//         <div className="cart-app">
-
-//         <div>
-//               {this.state.books.map((cart, i) => (
-//                   <div key={`${cart}_${i}`} className="new-book">
-//                      {cart}
-//                      <div className="btn-modify">
-//                         <button>Edit</button>
-//                         <button>Delete</button>
-//                      </div>
-//                   </div>
-//               ))}
-//            </div>
-
-//            <h1>My Todo App</h1>
-//            <input onChange={this.handleChange.bind(this)} name="nameOfNewBook" />
-
-           
-
-//            <button onClick={this.handleAddcartClick.bind(this)}>
-//              Add to cart
-//            </button>
-           
-           
-
-//         </div>
-//         );
-//     }
-
-//     handleChange(e) {
-//         this.setState({
-//             nameOfNewBook: e.target.value
-//         });
-//     }
-
-//     handleAddcartClick(){
-//         if (!this.state.nameOfNewBook.length) {
-//             return;
-//         }
-//         this.setState({
-//             nameOfNewBook: '',
-//             books: [...this.state.books, this.state.nameOfNewBook]
-//         });
-//     }
-// }
-// export default Addbook;
-
 class Category extends React.Component {
 constructor(props) {
     super(props);
     this.state = {
+      nameOfNewBook: '',
       items: []
     };
   }
 
   handleAddItem = () => {
     const items = this.state.items;
-    this.setState({ items: [...items, 'item-' + items.length] });
+    this.setState({ 
+      nameOfNewBook: '',
+      items: [...this.state.items, this.state.nameOfNewBook]
+     });
   };
+
+  handleChange = (e)=> {
+    e.preventDefault();
+    this.setState({
+      nameOfNewBook: e.target.value
+     });
+  }
 
   handleRemoveItem = () => {
     const items = this.state.items;
@@ -90,7 +44,9 @@ constructor(props) {
                    
                 <div className="new-book">
 
-                   key={index}>{item}
+                   <div key={item}>
+                      <h2 className="head2">{item}</h2>
+                   </div>
                    <br />
                    <div className="modify-btns">
                      <button  className="modify" type="button">Comments</button>
@@ -105,7 +61,7 @@ constructor(props) {
         <div className="form">
             <h3 className="header3">ADD NEW BOOK</h3>
             
-                <input type="text" placeholder="Book Title" />
+                <input type="text" placeholder="Book Title" onChange={ this.handleChange } name="nameOfNewBook" />
                 <select>
                    <option>Action</option>
                    <option>Science Friction</option>
