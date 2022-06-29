@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import '../App.css';
+import { FaUserAlt } from "react-icons/fa"; 
 
 const Navbar = () => {
     return (
@@ -16,7 +17,7 @@ const Navbar = () => {
               </ul>  
            </div>
            <div className="user">
-              <Link to="/User" className="user-img">  </Link>
+              <Link to="/User" className="user-img"> <FaUserAlt /> </Link>
            </div>
         </div>
     )

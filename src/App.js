@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Books from './components/Books';
 import Category from './components/Category';
 import User from './components/User';
+import Home from './components/Home';
 // import Add from './components/addtest';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             
             <div className="content">    
               <Routes>
+                 <Route path="/" element={<Home />} />
                  <Route path="/Books" element={<Books />} />              
                  <Route path="/Category" element={<Category />} />                            
                 <Route path="/User" element={<User />} />

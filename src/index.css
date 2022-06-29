@@ -15,27 +15,27 @@ code {
 
 
 
-.header3{
+.header3 {
   letter-spacing: 2px;
-    font-weight: 900;
-    color: gray;
-    font-size: 22px;
+  font-weight: 900;
+  color: gray;
+  font-size: 22px;
 }
 
-.form{
+.form {
   padding: 20px 40px;
 }
 
-input{
+input {
   width: 40%;
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 4px;
-    border: 0.5px solid;
-    outline: blue;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 0.5px solid;
+  outline: blue;
 }
 
-select{
+select {
   width: 20%;
   padding: 9px;
   margin-right: 20px;
@@ -45,7 +45,7 @@ select{
   border-radius: 4px;
 }
 
-.btn-add{
+.btn-add {
   width: 10%;
   padding: 10px;
   border: none;
@@ -54,24 +54,58 @@ select{
   font-weight: bold;
 }
 
-.new-book{
+.new-book {
   padding: 15px 0 0 20px;
   width: 90%;
   margin: 20px 55px;
   box-shadow: 0px 0px 2px;
   height: 150px;
   position: relative;
-  
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.modify{
+.sideca {
+  display: flex;
+  width: 30%;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.progress-btn {
+  background: rgb(4, 4, 110);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.modify {
   border: none;
   background-color: white;
   color: rgb(44, 44, 247);
   font-size: 15px;
   cursor: pointer;
 }
-.modify-btns{
+
+.modify-btns {
   position: absolute;
   bottom: 25px;
+}
+
+.horizontal-divider {
+  height: .125rem;
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 2.5rem 0 1.813rem;
+}
+
+.divider {
+  width: .125rem;
+  height: 8.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
 }
