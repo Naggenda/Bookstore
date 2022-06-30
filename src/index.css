@@ -66,9 +66,13 @@ select {
 
 }
 
+.head2{
+  margin: 0;
+}
+
 .sideca {
   display: flex;
-  width: 30%;
+  width: 35%;
   text-align: justify;
   padding: 0 20px;
 }
@@ -81,6 +85,11 @@ select {
   font-size: 15px;
   padding: 10px 25px;
   cursor: pointer;
+}
+
+p.modify{
+  margin: 1px;
+  cursor: default;
 }
 
 .modify {

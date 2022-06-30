@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
+import BookProp from './BookProp';
 
 class Home extends React.Component {
 constructor(props) {
@@ -37,7 +38,7 @@ constructor(props) {
    const items = this.state.items;
    return (
      <div className="wrapper">
-       
+      <BookProp />
        <div>
           {
               items.map((item, index) => 
