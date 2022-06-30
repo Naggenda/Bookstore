@@ -56,6 +56,13 @@ constructor(props) {
                   </div>
                   </div>
                   <div className="sideca">
+                    <div className="percent-complition">
+                      <div className="circular"></div>
+                      <div>
+                         <p className="p-big">64%</p>
+                         <p>Completed</p>
+                      </div>
+                    </div>
                     <div className="divider"></div>
                     <div>
                       <h5>CURRENT CHAPTER</h5>

@@ -72,7 +72,7 @@ select {
 
 .sideca {
   display: flex;
-  width: 35%;
+  width: 50%;
   text-align: justify;
   padding: 0 20px;
 }
@@ -85,6 +85,11 @@ select {
   font-size: 15px;
   padding: 10px 25px;
   cursor: pointer;
+}
+
+.percent-complition{
+  display: flex;
+  align-items: center;
 }
 
 p.modify{
@@ -117,4 +122,17 @@ p.modify{
   height: 8.375rem;
   margin: 0 3.688rem 0 4.938rem;
   background-color: #e8e8e8;
+}
+
+.circular{
+  width: 70px;
+  height: 70px;
+  border: 5px solid rgb(44, 44, 247);
+  border-radius: 50%;
+  border-left-color: #e8e8e8;
+  transform: rotate(45deg);
+}
+
+.p-big{
+  font-size: 30px;
 }
